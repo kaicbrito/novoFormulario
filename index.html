@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img class="logo" src="./assets/logo.png" alt="Logo" />
+    <h1>Cadastro de Usuários</h1>
+    <form id="user-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="sexo">Sexo:</label>
+      <select name="sexo" id="sexo">
+        <option selected>Selecione seu sexo</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label for="profissao">Profissão:</label>
+      <select name="profissao" id="profissao">
+        <option selected>Selecione sua profissão</option>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+        <option value="FullStack">FullStack</option>
+      </select>
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required />
+
+      <label for="phone">Telefone:</label>
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="(XX) XXXXX-XXXX"
+        required
+      />
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required />
+
+      <label for="logradouro">Rua:</label>
+      <input type="text" id="logradouro" name="logradouro" readonly />
+
+      <label for="numero">Número:</label>
+      <input type="text" id="numero" name="numero" required />
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" readonly />
+
+      <label for="localidade">Cidade:</label>
+      <input type="text" id="localidade" name="localidade" readonly />
+
+      <label for="uf">Estado:</label>
+      <input type="text" id="uf" name="uf" readonly />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+  <footer>
+    <p>Alunos: Iago, Jackson, Ronald, Pablo e Kaic.</p>
+    <p>Trabalho em grupo do Curso de ADS | Prof. Philip Casemiro</p>
+    <p>© Todos os direitos reservados 2023</p>
+  </footer>
+</html>
